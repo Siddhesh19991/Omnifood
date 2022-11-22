@@ -1,0 +1,358 @@
+/* 1350/16 = 84em */
+
+/* Below 1344px (Smaller desktops) */
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .grid-gallery-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .testomonials {
+    padding: 3.2rem 3.2rem;
+    padding-right: 3.2rem !important;
+  }
+
+  .human-1 {
+    display: none;
+  }
+  .human-2 {
+    display: none;
+  }
+
+  .human-3 {
+    display: none;
+  }
+
+  .human-4 {
+    display: none;
+  }
+  .grid-gallery-cols {
+    grid-template-rows: none;
+  }
+}
+
+/* 1200/16 = 75em */
+
+/* Below 1200px (Landscape Tablets) */
+
+@media (max-width: 75em) {
+  html {
+    /* 9px/16px= 56.25%; */
+    font-size: 56.25%;
+  }
+
+  /* Even though we changed font size to make 1rem = 9px, 
+  in the below we still assume that 1rem = 10px and proceed 
+  so that it is easier */
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  /* .heading-tertiary {
+    font-size: 2.4rem;
+  } */
+
+  .grid {
+    display: grid;
+    row-gap: 6.4rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .main-nav-link {
+    font-size: 1.6rem;
+  }
+
+  .CTA-form {
+    column-gap: 1.2rem;
+  }
+
+  .pricing-list {
+    font-size: 1.6rem;
+  }
+}
+
+/* 940/16 = 59em */
+
+/* Below 940px  (Tablets) */
+
+@media (max-width: 59rem) {
+  html {
+    /* 8px/16px= 50%; */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-img {
+    width: 60%;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-img-1 {
+    text-align: center;
+  }
+
+  .delivered-imgs {
+    justify-content: center;
+  }
+
+  .hero-summary {
+    padding: 0 9.6rem;
+  }
+
+  .hero {
+    gap: 8rem;
+  }
+
+  .logos .logo {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 8.6rem;
+  }
+
+  .grid-2-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-gallery-cols {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding-left: 1.6rem !important;
+  }
+  .human-1 {
+    display: block;
+  }
+  .human-2 {
+    display: block;
+  }
+
+  .human-3 {
+    display: block;
+  }
+
+  .human-4 {
+    display: block;
+  }
+
+  .CTA-form {
+    grid-template-columns: 1fr;
+  }
+
+  .CTA-btn {
+    grid-column: 1/2;
+    margin-top: 1.2rem;
+  }
+
+  /* .footer-list li,
+  .footer-list-1 li {
+    font-size: 1.4rem;
+  } */
+
+  .section-testomonials.grid {
+    row-gap: 2.4rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: rgb(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.5s;
+
+    /* Hide Navigation
+    Allows NO transitions at all
+    display: none; */
+
+    /* 1) Hide it visually  */
+    opacity: 0;
+
+    /* 2)Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3)Hide it from screen readers  */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 0.95;
+    pointer-events: auto;
+    visibility: visible;
+
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 5.2rem;
+  }
+
+  .main-nav-link:any-link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/* 700/16 = 75em */
+
+/* Below 700px (smaller Tablets) */
+
+@media (max-width: 44em) {
+  .grid-4-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .meal-flex {
+    width: 100%;
+  }
+
+  .section-pricing-color-1 {
+    width: 100%;
+  }
+
+  .section-pricing-color-2 {
+    width: 100%;
+  }
+
+  .logos .logo {
+    height: 2rem;
+  }
+
+  .section-footer {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 9.6rem;
+  }
+
+  .footer-1 {
+    grid-column: 1/4;
+  }
+
+  .footer-2 {
+    grid-column: 4/-1;
+  }
+
+  .footer-3 {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+}
+
+/* 550/16 = 34em */
+
+/* Below 550px (Phones) */
+
+@media (max-width: 34em) {
+  .logos .logo {
+    height: 1.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .meal-flex,
+  .grid-2-cols,
+  .grid-4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-summary {
+    padding: 0 3.2rem;
+  }
+
+  .section-hero {
+    padding-top: 2.4rem;
+    padding-bottom: 6.4rem;
+  }
+
+  .heading-secondary {
+    margin-bottom: 6.4rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .grid-customer-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-gallery-cols {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+  }
+
+  .testomonial-space {
+    margin-bottom: 6.4rem !important;
+  }
+
+  .heading-tertiary {
+    font-size: 2.6rem;
+  }
+
+  .step-number {
+    font-size: 6.4rem;
+  }
+
+  .heading-primary {
+    font-size: 4rem;
+  }
+
+  .grid-4-cols {
+    gap: 4.4rem !important;
+  }
+
+  .CTA-container {
+    margin-top: 0 !important;
+  }
+}
