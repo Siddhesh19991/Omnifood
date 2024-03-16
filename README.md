@@ -1,6 +1,6 @@
 # Omnifood Project 
 
-A healthy meal delivery app. 
+A healthy meal delivery app. The main objective of this project was to get hands-on experience in Javascript, HTML and CSS. So there is no backend or database connection in this particular project. I have done another in-depth project that includes backend connection and more, the link to that repo is [here](https://github.com/Siddhesh19991/Social_networking_web_application)
 
 Deployed website URL: https://omnifood-siddhesh.netlify.app/
 
